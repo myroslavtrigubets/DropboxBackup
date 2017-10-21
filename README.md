@@ -1,1 +1,3 @@
-# DropboxBackup
+# Dropbox Backup
+
+Simple backup script
