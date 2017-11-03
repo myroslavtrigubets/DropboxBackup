@@ -20,7 +20,6 @@ $backupdir = dirname(__FILE__);
 system("mysqldump -h $dbhost -u $dbuser --password='$dbpass' $dbname | gzip > $dbbackup");
 exec("tar cfzv $filebackup $backupdir");
 
-
 $dbxClient = new dbx\Client($token, "PHP-Example/1.0");
 
 uploadBackupDB($dbbackup, $dropboxDir, $dbxClient);
